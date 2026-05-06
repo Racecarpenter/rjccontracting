@@ -247,7 +247,7 @@ export default function RjcContracting() {
             <div className="hero-content">
               <p className="hero-tag animate">Civil Engineering Specialists</p>
               <h1 className="animate delay-1">
-                Excellence for<em> 30 Years</em><br />
+                30 Years of <em>Excellence</em><br />
               </h1>
               <p className="animate delay-2">
                 RJC Contracting, Inc. delivers expert civil engineering, concrete construction, and consulting services — with decades of proven results on complex, high-stakes projects.
