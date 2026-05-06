@@ -112,7 +112,7 @@ const serviceDetails = [
 
 const projectPreview = [
   { image: ASSETS.project1, label: "Concrete Experts", tall: true },
-  { image: ASSETS.project2, label: "Excellence for 30 Years" },
+  { image: ASSETS.project2, label: "30 Years of Excellence" },
   { image: ASSETS.project3, label: "Professionals in the Field" },
 ];
 
