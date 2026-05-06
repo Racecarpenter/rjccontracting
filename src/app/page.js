@@ -352,7 +352,7 @@ export default function RjcContracting() {
             <div className="container">
               <div className="about-layout">
                 <div className="about-img-wrap">
-                  <img src={ASSETS.about} alt="RJC Contracting project work" />
+                  <img src={ASSETS.logo} alt="RJC Contracting project work" />
                 </div>
 
                 <div className="about-text">
