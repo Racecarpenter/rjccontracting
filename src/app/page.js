@@ -111,9 +111,9 @@ const serviceDetails = [
 ];
 
 const projectPreview = [
-  { image: ASSETS.project1, label: "Concrete Structures", tall: true },
-  { image: ASSETS.project2, label: "Stadium Seating" },
-  { image: ASSETS.project3, label: "Sky Harbor Security Wall" },
+  { image: ASSETS.project1, label: "Concrete Experts", tall: true },
+  { image: ASSETS.project2, label: "Excellence for 30 Years" },
+  { image: ASSETS.project3, label: "Professionals in the Field" },
 ];
 
 const projects = [
