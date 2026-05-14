@@ -587,7 +587,7 @@ section {
   width: 100%;
   aspect-ratio: 4 / 5;
   object-fit: cover;
-  object-position: top;
+  object-position: right;
 }
 
 .about-img-wrap::before {

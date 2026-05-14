@@ -86,7 +86,7 @@ const serviceDetails = [
     ],
     tags: [
       "Bridge Structures",
-      "Archictectural and Civil Precast Structure Erecting",
+      "Architectural & Civil Precast Structure Erecting",
       "Culverts & Drainage",
       "Stadium Seating",
       "Formed Concrete",
