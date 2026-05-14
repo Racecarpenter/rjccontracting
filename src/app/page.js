@@ -38,11 +38,7 @@ const ASSETS = {
   project7: assetPath("IMG_3540.jpg"),
   project8: assetPath("IMG_6169.jpg"),
   project9: assetPath("Sky Harbor Security Wall.jpg"),
- about: assetPath("about.jpg"),
-};
-
-const futurePhotos = {
-    project10: assetPath("IMG_3022.jpg"),
+  project10: assetPath("IMG_3022.jpg"),
   project11: assetPath("IMG_2562.jpg"),
   project12: assetPath("Liberty Parking Garage Phase III.jpg"),
   project13: assetPath("IMGP0195.JPG"),
@@ -54,6 +50,11 @@ const futurePhotos = {
   project19: assetPath("IMG_3540.jpg"),
   project20: assetPath("IMG_2562.jpg"),
   project21: assetPath("Liberty Parking Garage Phase III.jpg"),
+ about: assetPath("about.jpg"),
+};
+
+const futurePhotos = {
+    
 }
 
 console.log('future photos: ', futurePhotos)
@@ -142,6 +143,18 @@ const projects = [
   { image: ASSETS.project7, title: "Stadium Construction", category: "Concrete Structures" },
   { image: ASSETS.project8, title: "Drainage Structure", category: "Concrete Structures" },
   { image: ASSETS.project9, title: "Civil Site Work", category: "Consulting" },
+  { image: ASSETS.project10, title: "Project Supervision", category: "Onsite Supervision" },
+  { image: ASSETS.project11, title: "Formwork Systems", category: "Concrete Structures" },
+  { image: ASSETS.project12, title: "Parking Garage Construction", category: "Concrete Structures" },
+  { image: ASSETS.project13, title: "Bridge Construction", category: "Concrete Structures" },
+  { image: ASSETS.project14, title: "Stadium Seating Installation", category: "Concrete Structures" },
+  { image: ASSETS.project15, title: "Complex Formwork", category: "Concrete Structures" },
+  { image: ASSETS.project16, title: "Culvert Construction", category: "Concrete Structures" },
+  { image: ASSETS.project17, title: "Onsite Project Supervision", category: "Onsite Supervision" },
+  { image: ASSETS.project18, title: "Consulting & Troubleshooting", category: "Consulting" },
+  { image: ASSETS.project19, title: "Precision Concrete Pour", category: "Concrete Structures" },
+  { image: ASSETS.project20, title: "Retaining Wall Construction", category: "Concrete Structures" },
+  { image: ASSETS.project21, title: "Architectural Concrete Work", category: "Concrete Structures" },
 ];
 
 const values = [
