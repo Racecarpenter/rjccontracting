@@ -38,8 +38,25 @@ const ASSETS = {
   project7: assetPath("IMG_3540.jpg"),
   project8: assetPath("IMG_6169.jpg"),
   project9: assetPath("Sky Harbor Security Wall.jpg"),
-  about: assetPath("about.jpg"),
+ about: assetPath("about.jpg"),
 };
+
+const futurePhotos = {
+    project10: assetPath("IMG_3022.jpg"),
+  project11: assetPath("IMG_2562.jpg"),
+  project12: assetPath("Liberty Parking Garage Phase III.jpg"),
+  project13: assetPath("IMGP0195.JPG"),
+  project14: assetPath("BCS Demo Fascia Removal Sky Harbor.jpg"),
+  project15: assetPath("2015-04-16_07-46-16_166.jpg"),
+  project16: assetPath("2014-12-16_14-15-32_958.jpg"),
+  project17: assetPath("IMG_4609.jpg"),
+  project18: assetPath("IMG_6185 (3).jpg"),
+  project19: assetPath("IMG_3540.jpg"),
+  project20: assetPath("IMG_2562.jpg"),
+  project21: assetPath("Liberty Parking Garage Phase III.jpg"),
+}
+
+console.log('future photos: ', futurePhotos)
 
 const services = [
   {
@@ -69,9 +86,8 @@ const serviceDetails = [
     ],
     tags: [
       "Bridge Structures",
-      "Retaining Walls",
+      "Archictectural and Civil Precast Structure Erecting",
       "Culverts & Drainage",
-      "Tilt-Up Construction",
       "Stadium Seating",
       "Formed Concrete",
       "Foundation Systems",
@@ -352,7 +368,7 @@ export default function RjcContracting() {
             <div className="container">
               <div className="about-layout">
                 <div className="about-img-wrap">
-                  <img src={ASSETS.logo} alt="RJC Contracting project work" />
+                  <img src={ASSETS.project2} alt="RJC Contracting project work" />
                 </div>
 
                 <div className="about-text">

@@ -143,8 +143,8 @@ button {
 .hero-bg {
   position: absolute;
   inset: 0;
-  background-size: contain;
-  background-position: center;
+  background-size: 50%;
+  background-position: 90%;
   background-repeat: no-repeat;
   background-color: #f8f5ef;
 }
@@ -901,6 +901,10 @@ footer {
 
   .hamburger {
     display: flex;
+  }
+
+  .hero-bg {
+    display: none;
   }
 
   .mobile-menu {
