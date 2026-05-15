@@ -331,6 +331,46 @@ section {
   background: var(--off-white);
 }
 
+.projects-full-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: 260px;
+  gap: 6px;
+  grid-auto-flow: dense;
+}
+
+.proj-full-item {
+  position: relative;
+  overflow: hidden;
+  background: #111;
+}
+
+.proj-full-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.proj-full-item:hover img {
+  transform: scale(1.04);
+}
+
+/* size variations */
+
+.proj-full-item.large {
+  grid-column: span 2;
+  grid-row: span 2;
+}
+
+.proj-full-item.wide {
+  grid-column: span 2;
+}
+
+.proj-full-item.tall {
+  grid-row: span 2;
+}
+
 .services-grid,
 .values-cards,
 .projects-full-grid {
@@ -896,6 +936,18 @@ footer {
 }
 
 @media (max-width: 900px) {
+
+  .projects-full-grid {
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: 180px;
+  }
+
+  .proj-full-item.large,
+  .proj-full-item.wide,
+  .proj-full-item.tall {
+    grid-column: span 1;
+    grid-row: span 1;
+  }
   .rjc-site nav {
     background-color: var(--tan-dark)
   }
@@ -1025,6 +1077,10 @@ footer {
 }
 
 @media (max-width: 600px) {
+  .projects-full-grid {
+    grid-template-columns: 1fr;
+  }
+  
   .rjc-site nav {
     padding: 0 1.25rem;
   }

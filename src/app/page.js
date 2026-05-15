@@ -411,11 +411,25 @@ export default function RjcContracting() {
           <section>
             <div className="container">
               <div className="projects-full-grid">
-                {projects.map((project) => (
-                  <article className="proj-full-item" key={project.title}>
-                    <img src={project.image} alt={project.title} />
-                  </article>
-                ))}
+                {projects.map((project, index) => {
+                  const sizeClass =
+                    index % 7 === 0
+                      ? "large"
+                      : index % 5 === 0
+                      ? "wide"
+                      : index % 3 === 0
+                      ? "tall"
+                      : "";
+
+                  return (
+                    <article
+                      className={`proj-full-item ${sizeClass}`}
+                      key={project.title}
+                    >
+                      <img src={project.image} alt={project.title} />
+                    </article>
+                  );
+                })}
               </div>
 
               <div className="center spaced-large">
