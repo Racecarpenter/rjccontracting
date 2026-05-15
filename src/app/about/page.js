@@ -36,7 +36,7 @@ export default function AboutPage() {
 
               <h2>Decades of Experience. Built Right.</h2>
 
-              <h2>City of Phoenix Certified SBE</h2>
+              <h3>City of Phoenix Certified SBE</h3>
 
               <div className="divider" />
 
