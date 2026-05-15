@@ -38,26 +38,18 @@ const ASSETS = {
   project7: assetPath("IMG_3540.jpg"),
   project8: assetPath("IMG_6169.jpg"),
   project9: assetPath("Sky Harbor Security Wall.jpg"),
-  project10: assetPath("IMG_3022.jpg"),
-  project11: assetPath("IMG_2562.jpg"),
-  project12: assetPath("Liberty Parking Garage Phase III.jpg"),
-  project13: assetPath("IMGP0195.JPG"),
-  project14: assetPath("BCS Demo Fascia Removal Sky Harbor.jpg"),
-  project15: assetPath("2015-04-16_07-46-16_166.jpg"),
-  project16: assetPath("2014-12-16_14-15-32_958.jpg"),
-  project17: assetPath("IMG_4609.jpg"),
-  project18: assetPath("IMG_6185 (3).jpg"),
-  project19: assetPath("IMG_3540.jpg"),
-  project20: assetPath("IMG_2562.jpg"),
-  project21: assetPath("Liberty Parking Garage Phase III.jpg"),
+  project10: assetPath("Liberty Parking Garage Phase III.jpg"),
+  project11: assetPath("BCS Demo Fascia Removal Sky Harbor.jpg"),
+  project12: assetPath("2015-04-16_07-46-16_166.jpg"),
+  project13: assetPath("2014-12-16_14-15-32_958.jpg"),
+  project14: assetPath("IMG_4609.jpeg"),
+  project15: assetPath("IMG_6185 (3).jpeg"),
+  project16: assetPath("IMG_3540.jpg"),
+  project17: assetPath("Liberty Parking Garage Phase III.jpg"),
+  project18: assetPath("IMG_3022.jpeg"),
  about: assetPath("about.jpg"),
 };
 
-const futurePhotos = {
-    
-}
-
-console.log('future photos: ', futurePhotos)
 
 const services = [
   {
@@ -152,9 +144,6 @@ const projects = [
   { image: ASSETS.project16, title: "Culvert Construction", category: "Concrete Structures" },
   { image: ASSETS.project17, title: "Onsite Project Supervision", category: "Onsite Supervision" },
   { image: ASSETS.project18, title: "Consulting & Troubleshooting", category: "Consulting" },
-  { image: ASSETS.project19, title: "Precision Concrete Pour", category: "Concrete Structures" },
-  { image: ASSETS.project20, title: "Retaining Wall Construction", category: "Concrete Structures" },
-  { image: ASSETS.project21, title: "Architectural Concrete Work", category: "Concrete Structures" },
 ];
 
 const values = [
