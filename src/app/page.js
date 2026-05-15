@@ -413,11 +413,11 @@ export default function RjcContracting() {
               <div className="projects-full-grid">
                 {projects.map((project, index) => {
                   const sizeClass =
-                    index % 7 === 0
+                    index === 0 || index === 8
                       ? "large"
-                      : index % 5 === 0
+                      : index === 3 || index === 10
                       ? "wide"
-                      : index % 3 === 0
+                      : index === 5 || index === 12
                       ? "tall"
                       : "";
 
