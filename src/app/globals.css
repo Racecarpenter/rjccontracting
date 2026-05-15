@@ -896,12 +896,16 @@ footer {
 }
 
 @media (max-width: 900px) {
+  .rjc-site nav {
+    background-color: var(--tan-dark)
+  }
   .nav-links {
     display: none;
   }
 
   .hamburger {
     display: flex;
+    color: var(--black);
   }
 
   .hero-content {
