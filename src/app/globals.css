@@ -131,7 +131,7 @@ button {
 }
 
 .hero {
-  background-color: black;
+  background-color: var(--off-white);
   position: relative;
   min-height: 600px;
   height: 100vh;
