@@ -44,7 +44,6 @@ const ASSETS = {
   project13: assetPath("2014-12-16_14-15-32_958.jpg"),
   project14: assetPath("IMG_4609.jpeg"),
   project15: assetPath("IMG_6185 (3).jpeg"),
-  project16: assetPath("IMG_3540.jpg"),
   project17: assetPath("Liberty Parking Garage Phase III.jpg"),
   project18: assetPath("IMG_3022.jpeg"),
  about: assetPath("about.jpg"),
@@ -141,7 +140,6 @@ const projects = [
   { image: ASSETS.project13, title: "Bridge Construction", category: "Concrete Structures" },
   { image: ASSETS.project14, title: "Stadium Seating Installation", category: "Concrete Structures" },
   { image: ASSETS.project15, title: "Complex Formwork", category: "Concrete Structures" },
-  { image: ASSETS.project16, title: "Culvert Construction", category: "Concrete Structures" },
   { image: ASSETS.project17, title: "Onsite Project Supervision", category: "Onsite Supervision" },
   { image: ASSETS.project18, title: "Consulting & Troubleshooting", category: "Consulting" },
 ];
