@@ -125,23 +125,23 @@ const projectPreview = [
 ];
 
 const projects = [
-  { image: ASSETS.project1, title: "Foundation Concrete Pour", category: "Concrete Structures" },
-  { image: ASSETS.project2, title: "Sky Harbor Security Wall", category: "Onsite Supervision" },
-  { image: ASSETS.project3, title: "Concrete Forming Work", category: "Concrete Structures" },
-  { image: ASSETS.project4, title: "Stadium Seating Structure", category: "Concrete Structures" },
-  { image: ASSETS.project5, title: "Bridge Beam Placement", category: "Concrete Structures" },
-  { image: ASSETS.project6, title: "Tilt-Up Concrete Panels", category: "Concrete Structures" },
-  { image: ASSETS.project7, title: "Stadium Construction", category: "Concrete Structures" },
-  { image: ASSETS.project8, title: "Drainage Structure", category: "Concrete Structures" },
-  { image: ASSETS.project9, title: "Civil Site Work", category: "Consulting" },
-  { image: ASSETS.project10, title: "Project Supervision", category: "Onsite Supervision" },
-  { image: ASSETS.project11, title: "Formwork Systems", category: "Concrete Structures" },
-  { image: ASSETS.project12, title: "Parking Garage Construction", category: "Concrete Structures" },
-  { image: ASSETS.project13, title: "Bridge Construction", category: "Concrete Structures" },
-  { image: ASSETS.project14, title: "Stadium Seating Installation", category: "Concrete Structures" },
-  { image: ASSETS.project15, title: "Complex Formwork", category: "Concrete Structures" },
-  { image: ASSETS.project17, title: "Onsite Project Supervision", category: "Onsite Supervision" },
-  { image: ASSETS.project18, title: "Consulting & Troubleshooting", category: "Consulting" },
+  { image: ASSETS.project1},
+  { image: ASSETS.project2},
+  { image: ASSETS.project3},
+  { image: ASSETS.project4},
+  { image: ASSETS.project5},
+  { image: ASSETS.project6},
+  { image: ASSETS.project7},
+  { image: ASSETS.project8},
+  { image: ASSETS.project9},
+  { image: ASSETS.project10}, 
+  { image: ASSETS.project11},
+  { image: ASSETS.project12},
+  { image: ASSETS.project13},
+  { image: ASSETS.project14},
+  { image: ASSETS.project15},
+  { image: ASSETS.project17},
+  { image: ASSETS.project18},
 ];
 
 const values = [
@@ -414,12 +414,6 @@ export default function RjcContracting() {
                 {projects.map((project) => (
                   <article className="proj-full-item" key={project.title}>
                     <img src={project.image} alt={project.title} />
-                    <div className="proj-full-overlay">
-                      <div className="proj-full-label">
-                        <h4>{project.title}</h4>
-                        <span>{project.category}</span>
-                      </div>
-                    </div>
                   </article>
                 ))}
               </div>
