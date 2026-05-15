@@ -190,6 +190,7 @@ export default function RjcContracting() {
   const [page, setPage] = useState("home");
   const [menuOpen, setMenuOpen] = useState(false);
   const [formSent, setFormSent] = useState(false);
+  const [selectedImage, setSelectedImage] = useState(null);
 
   useEffect(() => {
     const hash = window.location.hash.replace("#", "");
@@ -261,7 +262,7 @@ export default function RjcContracting() {
           <div className="hero">
             <div className="hero-bg" style={{ backgroundImage: `url(${ASSETS.hero})` }} />
             <div className="hero-content">
-              <p className="hero-tag animate">Civil Engineering Specialists</p>
+              <p className="hero-tag animate">LICENSED, BONDED, AND INSURED</p>
               <h1 className="animate delay-1">
                 30 Years of <em>Excellence</em><br />
               </h1>
@@ -374,6 +375,7 @@ export default function RjcContracting() {
                 <div className="about-text">
                   <span className="section-tag">Who We Are</span>
                   <h2>Decades of Experience. Built Right.</h2>
+                  <h2>City of Phoenix Certified SBE</h2>
                   <div className="divider" />
                   <p>RJC Contracting, Inc. was founded on the belief that great construction starts with great engineering — and that the two should never be separated. Based in Mesa, Arizona, we have spent decades building some of the most technically demanding concrete and civil structures in the Southwest.</p>
                   <p>Our motto is simple: do it right the first time. From major transportation projects to complex vertical construction, RJC has earned its reputation one project at a time.</p>
@@ -411,26 +413,37 @@ export default function RjcContracting() {
           <section>
             <div className="container">
               <div className="projects-full-grid">
-                {projects.map((project, index) => {
-                  const sizeClass =
-                    index === 0 || index === 8
-                      ? "large"
-                      : index === 3 || index === 10
-                      ? "wide"
-                      : index === 5 || index === 12
-                      ? "tall"
-                      : "";
-
-                  return (
-                    <article
-                      className={`proj-full-item ${sizeClass}`}
-                      key={project.title}
+                  {projects.map((project) => (
+                    <button
+                      className="proj-full-item"
+                      key={project.image}
+                      type="button"
+                      onClick={() => setSelectedImage(project.image)}
                     >
-                      <img src={project.image} alt={project.title} />
-                    </article>
-                  );
-                })}
+                      <img src={project.image} alt="" />
+                    </button>
+                  ))}
               </div>
+
+              {selectedImage && (
+                <div className="photo-modal" onClick={() => setSelectedImage(null)}>
+                  <button
+                    className="photo-modal-close"
+                    type="button"
+                    onClick={() => setSelectedImage(null)}
+                    aria-label="Close photo"
+                  >
+                    ×
+                  </button>
+
+                  <img
+                    className="photo-modal-img"
+                    src={selectedImage}
+                    alt=""
+                    onClick={(event) => event.stopPropagation()}
+                  />
+                </div>
+              )}
 
               <div className="center spaced-large">
                 <p className="muted">Interested in working with RJC on your next project?</p>

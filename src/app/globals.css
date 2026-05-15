@@ -333,42 +333,64 @@ section {
 
 .projects-full-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-auto-rows: 220px;
+  grid-template-columns: repeat(3, 1fr);
   gap: 8px;
   margin-top: 3rem;
-  align-items: stretch;
 }
 
 .proj-full-item {
   position: relative;
   overflow: hidden;
+  aspect-ratio: 4 / 3;
   background: #111;
-  aspect-ratio: auto;
-  min-height: 0;
+  border: 0;
+  padding: 0;
+  cursor: pointer;
 }
 
 .proj-full-item img {
-  display: block;
   width: 100%;
   height: 100%;
   object-fit: cover;
+  display: block;
+  transition: transform 0.4s ease;
 }
 
-/* Controlled desktop variation — no chaotic masonry */
-.proj-full-item.large {
-  grid-column: span 2;
-  grid-row: span 2;
+.proj-full-item:hover img {
+  transform: scale(1.03);
 }
 
-.proj-full-item.wide {
-  grid-column: span 2;
-  grid-row: span 1;
+.photo-modal {
+  position: fixed;
+  inset: 0;
+  z-index: 5000;
+  padding: 2rem;
+  background: rgba(26, 24, 20, 0.92);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.proj-full-item.tall {
-  grid-column: span 1;
-  grid-row: span 2;
+.photo-modal-img {
+  max-width: 95vw;
+  max-height: 88vh;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.45);
+}
+
+.photo-modal-close {
+  position: fixed;
+  top: 1.25rem;
+  right: 1.5rem;
+  z-index: 5001;
+  border: 0;
+  background: transparent;
+  color: var(--white);
+  font-size: 3rem;
+  line-height: 1;
+  cursor: pointer;
 }
 
 /* keeps the bottom quote section below the photo grid */
@@ -697,9 +719,6 @@ section {
   gap: 3px;
 }
 
-.proj-full-item {
-  aspect-ratio: 4 / 3;
-}
 
 .proj-full-label {
   color: var(--white);
@@ -945,15 +964,11 @@ footer {
 
 @media (max-width: 900px) {
   .projects-full-grid {
-    grid-template-columns: repeat(2, 1fr);
-    grid-auto-rows: auto;
+    grid-template-columns: 1fr 1fr;
     gap: 6px;
   }
 
-  .proj-full-item,
-  .proj-full-item.large,
-  .proj-full-item.wide,
-  .proj-full-item.tall {
+  .proj-full-item {
     grid-column: auto;
     grid-row: auto;
     aspect-ratio: 4 / 3;
@@ -1091,15 +1106,11 @@ footer {
 }
 
 @media (max-width: 600px) {
-  .projects-full-grid {
+    .projects-full-grid {
     grid-template-columns: 1fr;
-    gap: 8px;
   }
 
-  .proj-full-item,
-  .proj-full-item.large,
-  .proj-full-item.wide,
-  .proj-full-item.tall {
+  .proj-full-item {
     aspect-ratio: 4 / 3;
   }
   
