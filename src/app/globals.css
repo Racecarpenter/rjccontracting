@@ -131,6 +131,7 @@ button {
 }
 
 .hero {
+  background-color: black;
   position: relative;
   min-height: 600px;
   height: 100vh;
@@ -903,9 +904,24 @@ footer {
     display: flex;
   }
 
-  .hero-bg {
-    display: none;
+  .hero-content {
+    width: 100%;
+    max-width: 600px;
   }
+
+  .hero-bg {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 220px;
+    margin-bottom: 2rem;
+
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: transparent;
+  }
+
 
   .mobile-menu {
     position: fixed;
@@ -935,12 +951,18 @@ footer {
   }
 
   .hero {
-    padding: 0 2rem 5rem;
+    padding: 6rem 2rem 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    text-align: left;
   }
 
   .hero-bg::after {
-    background: linear-gradient(to top, rgba(26, 24, 20, 0.9) 0%, rgba(26, 24, 20, 0.4) 100%);
+    display: none;
   }
+
 
   .stats-bar {
     flex-wrap: wrap;
