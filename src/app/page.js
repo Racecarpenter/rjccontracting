@@ -28,7 +28,7 @@ function assetPath(filename) {
 
 const ASSETS = {
   logo: assetPath("RJC_Logo.png"),
-  hero: assetPath("RJC_Logo.png"),
+  hero: assetPath("logo-2.png"),
   project1: assetPath("1607 Day 1 Photo 2.jpg"),
   project2: assetPath("2012-08-27 08.51.04.jpg"),
   project3: assetPath("2012-08-27 09.17.15.jpg"),
